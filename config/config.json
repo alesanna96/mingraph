@@ -1,0 +1,42 @@
+{
+    "ghidra_analyzer_script_settings":{
+        "temporary_project_folder":"./tmp",
+        "temporary_project_name":"samples_analysis",
+        "headless_analyzer_path":"./ghidra_9.1.2_PUBLIC/support/analyzeHeadless",
+        "ghidra_scripts_path":"./src/ghidra_scripts",
+        "samples_directory":"./storage/data/meloni_samples_5-sorted/unpacked/",
+        "output_directory":"./storage/out/meloni_samples_5/graphs/",
+        "ghidra_script_log_path":"./tmp/analyzer_log.log",
+        "python_script_log_path":"./tmp/script_log.log",
+        "analysis_timeout":"225"
+    },
+    "local_dbs":{
+        "static_signatures_db":"./docs/sig-database-master/windows/",
+        "packer_signatures_db":"./docs/Exescan-master/userdb.txt",
+        "families_db":"./data/other/families_df.parquet"
+    },
+    "family_detector_settings":{
+        "VirusTotal_jsons_folder":"./docs/jsons/",
+        "avclass_labeler_path": "./docs/avclass/avclass_labeler.py",
+        "output_directory":"./data/other/",
+        "output_name":"families_df.parquet"
+    },
+    "packing_detector_settings":{
+        "samples_directory":"./storage/data/meloni_samples_5/",
+        "output_directory":"./storage/out/meloni_samples_5/",
+        "output_name":"packing_analysis_meloni_samples_5.parquet"
+    },
+    "feature_extractor_settings":{
+        "node_embedding_detail":20,
+        "neighbourhood_embedding":30,
+        "raw_input_data_folder":"./storage/out/meloni_samples_5/graphs/",
+        "output_directory":"./",
+        "output_name":"fingerprints_meloni_samples_5.parquet"
+    },
+    "sort_samples_settings": {
+        "data_folder": "./storage/data",
+        "raw_samples": "meloni_samples_5",
+        "input_parquet": "./storage/out/meloni_samples_5/packing_analysis_meloni_samples_5.parquet",
+        "output_folder": "meloni_samples_5-sorted"
+    }
+}

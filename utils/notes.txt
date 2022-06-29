@@ -1,0 +1,625 @@
+sample 00a70ffb2928 has an unwind funciton that gets the script stuck
+
+
+SVM WITH BALANCED DATASET
+fold 1:
+        training:
+                size: 2112
+                elapsed time: 00:05:50.41
+        test:
+                size: 528
+                elapsed time: 00:01:27.41
+
+
+              precision    recall  f1-score   support
+
+       ausiv       0.56      1.00      0.72        66
+      autoit       1.00      0.98      0.99        66
+       gepys       0.84      0.98      0.91        66
+ installcore       1.00      0.98      0.99        66
+      shipup       0.98      0.82      0.89        66
+       sivis       1.00      0.21      0.35        66
+      upatre       0.97      1.00      0.99        66
+     virlock       1.00      1.00      1.00        66
+
+    accuracy                           0.87       528
+   macro avg       0.92      0.87      0.85       528
+weighted avg       0.92      0.87      0.85       528
+
+fold 2:
+        training:
+                size: 2112
+                elapsed time: 00:05:48.67
+        test:
+                size: 528
+                elapsed time: 00:01:28.04
+
+
+              precision    recall  f1-score   support
+
+       ausiv       0.57      1.00      0.73        66
+      autoit       1.00      1.00      1.00        66
+       gepys       0.85      0.86      0.86        66
+ installcore       1.00      1.00      1.00        66
+      shipup       0.86      0.85      0.85        66
+       sivis       1.00      0.26      0.41        66
+      upatre       1.00      1.00      1.00        66
+     virlock       1.00      1.00      1.00        66
+
+    accuracy                           0.87       528
+   macro avg       0.91      0.87      0.86       528
+weighted avg       0.91      0.87      0.86       528
+
+fold 3:
+        training:
+                size: 2112
+                elapsed time: 00:05:51.40
+        test:
+                size: 528
+                elapsed time: 00:01:28.22
+
+
+              precision    recall  f1-score   support
+
+       ausiv       0.56      1.00      0.72        66
+      autoit       1.00      1.00      1.00        66
+       gepys       0.82      0.98      0.90        66
+ installcore       1.00      0.94      0.97        66
+      shipup       0.98      0.79      0.87        66
+       sivis       1.00      0.23      0.37        66
+      upatre       0.94      1.00      0.97        66
+     virlock       1.00      1.00      1.00        66
+
+    accuracy                           0.87       528
+   macro avg       0.91      0.87      0.85       528
+weighted avg       0.91      0.87      0.85       528
+
+fold 4:
+        training:
+                size: 2112
+                elapsed time: 00:05:53.68
+        test:
+                size: 528
+                elapsed time: 00:01:28.90
+
+
+              precision    recall  f1-score   support
+
+       ausiv       0.58      1.00      0.73        66
+      autoit       1.00      0.98      0.99        66
+       gepys       0.87      0.98      0.92        66
+ installcore       1.00      1.00      1.00        66
+      shipup       0.98      0.85      0.91        66
+       sivis       1.00      0.27      0.43        66
+      upatre       0.99      1.00      0.99        66
+     virlock       1.00      1.00      1.00        66
+
+    accuracy                           0.89       528
+   macro avg       0.93      0.89      0.87       528
+weighted avg       0.93      0.89      0.87       528
+
+fold 5:
+        training:
+                size: 2112
+                elapsed time: 00:05:53.41
+        test:
+                size: 528
+                elapsed time: 00:01:28.88
+
+
+              precision    recall  f1-score   support
+
+       ausiv       0.58      1.00      0.74        66
+      autoit       1.00      1.00      1.00        66
+       gepys       0.81      0.95      0.88        66
+ installcore       1.00      1.00      1.00        66
+      shipup       0.95      0.79      0.86        66
+       sivis       1.00      0.29      0.45        66
+      upatre       1.00      0.98      0.99        66
+     virlock       1.00      1.00      1.00        66
+
+    accuracy                           0.88       528
+   macro avg       0.92      0.88      0.86       528
+weighted avg       0.92      0.88      0.86       528
+
+
+
+#######################################################
+
+SVM WITH UNBALANCED DATASET
+
+fold 1:
+        training:
+                size: 3038
+                elapsed time: 00:11:49.45
+        test:
+                size: 760
+                elapsed time: 00:02:55.71
+
+
+              precision    recall  f1-score   support
+
+       ausiv       0.52      1.00      0.68        88
+      autoit       1.00      1.00      1.00       107
+       gepys       0.83      1.00      0.91        88
+ installcore       1.00      0.99      0.99        88
+      shipup       1.00      0.84      0.91       110
+       sivis       1.00      0.23      0.38       107
+      upatre       0.99      1.00      1.00       106
+     virlock       1.00      1.00      1.00        66
+
+    accuracy                           0.87       760
+   macro avg       0.92      0.88      0.86       760
+weighted avg       0.92      0.87      0.85       760
+
+fold 2:
+        training:
+                size: 3038
+                elapsed time: 00:11:44.78
+        test:
+                size: 760
+                elapsed time: 00:02:58.54
+
+
+              precision    recall  f1-score   support
+
+       ausiv       0.51      1.00      0.68        88
+      autoit       1.00      1.00      1.00       106
+       gepys       0.81      0.94      0.87        88
+ installcore       1.00      0.95      0.98        88
+      shipup       0.95      0.82      0.88       110
+       sivis       1.00      0.21      0.35       107
+      upatre       0.96      1.00      0.98       106
+     virlock       1.00      1.00      1.00        67
+
+    accuracy                           0.85       760
+   macro avg       0.90      0.87      0.84       760
+weighted avg       0.91      0.85      0.83       760
+
+fold 3:
+        training:
+                size: 3038
+                elapsed time: 00:11:49.03
+        test:
+                size: 760
+                elapsed time: 00:02:57.25
+
+
+              precision    recall  f1-score   support
+
+       ausiv       0.55      1.00      0.71        88
+      autoit       1.00      0.99      1.00       107
+       gepys       0.80      0.98      0.88        88
+ installcore       1.00      0.99      0.99        88
+      shipup       0.98      0.82      0.89       109
+       sivis       1.00      0.31      0.47       106
+      upatre       0.98      0.99      0.99       107
+     virlock       1.00      1.00      1.00        67
+
+    accuracy                           0.87       760
+   macro avg       0.91      0.88      0.87       760
+weighted avg       0.92      0.87      0.86       760
+
+fold 4:
+        training:
+                size: 3039
+                elapsed time: 00:11:52.28
+        test:
+                size: 759
+                elapsed time: 00:02:58.07
+
+
+              precision    recall  f1-score   support
+
+       ausiv       0.50      1.00      0.67        88
+      autoit       1.00      1.00      1.00       107
+       gepys       0.85      0.97      0.90        88
+ installcore       1.00      1.00      1.00        87
+      shipup       0.97      0.86      0.91       109
+       sivis       1.00      0.18      0.30       106
+      upatre       1.00      1.00      1.00       107
+     virlock       1.00      1.00      1.00        67
+
+    accuracy                           0.86       759
+   macro avg       0.92      0.88      0.85       759
+weighted avg       0.92      0.86      0.84       759
+
+fold 5:
+        training:
+                size: 3039
+                elapsed time: 00:11:53.22
+        test:
+                size: 759
+                elapsed time: 00:02:58.19
+
+
+              precision    recall  f1-score   support
+
+       ausiv       0.54      1.00      0.70        88
+      autoit       1.00      0.99      1.00       107
+       gepys       0.81      0.99      0.89        88
+ installcore       0.99      1.00      0.99        88
+      shipup       0.99      0.83      0.90       109
+       sivis       1.00      0.29      0.45       106
+      upatre       0.99      0.98      0.99       107
+     virlock       1.00      1.00      1.00        66
+
+    accuracy                           0.87       759
+   macro avg       0.92      0.88      0.87       759
+weighted avg       0.92      0.87      0.86       759
+
+
+
+
+
+
+
+
+0.52      1.00      0.68       0.51      1.00      0.68       0.55      1.00      0.71       0.50      1.00      0.67       0.54      1.00      0.70
+1.00      1.00      1.00       1.00      1.00      1.00       1.00      0.99      1.00       1.00      1.00      1.00       1.00      0.99      1.00
+0.83      1.00      0.91       0.81      0.94      0.87       0.80      0.98      0.88       0.85      0.97      0.90       0.81      0.99      0.89
+1.00      0.99      0.99       1.00      0.95      0.98       1.00      0.99      0.99       1.00      1.00      1.00       0.99      1.00      0.99
+1.00      0.84      0.91       0.95      0.82      0.88       0.98      0.82      0.89       0.97      0.86      0.91       0.99      0.83      0.90
+1.00      0.23      0.38       1.00      0.21      0.35       1.00      0.31      0.47       1.00      0.18      0.30       1.00      0.29      0.45
+0.99      1.00      1.00       0.96      1.00      0.98       0.98      0.99      0.99       1.00      1.00      1.00       0.99      0.98      0.99
+1.00      1.00      1.00       1.00      1.00      1.00       1.00      1.00      1.00       1.00      1.00      1.00       1.00      1.00      1.00
+
+precision 5 fold SVM (in same class order)
+0.524,1,0.82,0.998,0.978,1,0.984,1   
+recall 5 fold SVM (in same class order)
+1,0.996,0.976,0.986,0.834,0.244,0.994,1
+f1 5 fold SVM (in same class order)
+0.688,1,0.89,0.99,0.898,0.39,0.992,1
+
+
+ausiv and sivis evidence to show they are different type of trojans:
+https://blog.talosintelligence.com/2018/11/threat-roundup-1019-1102.html
+https://www.fortiguard.com/encyclopedia/virus/7926398
+
+
+##########################################################################
+
+KNN with unbalanced DATASET
+
+fold 1:
+        training:
+                size: 3038
+                elapsed time: 00:00:01.83
+        test:
+                size: 760
+                elapsed time: 00:02:05.82
+
+
+              precision    recall  f1-score   support
+
+       ausiv       0.00      0.00      0.00        88
+      autoit       0.95      0.99      0.97       107
+       gepys       0.85      0.99      0.92        88
+ installcore       1.00      1.00      1.00        88
+      shipup       0.98      0.85      0.91       110
+       sivis       0.55      1.00      0.71       107
+      upatre       0.97      0.94      0.96       106
+     virlock       1.00      0.98      0.99        66
+
+    accuracy                           0.85       760
+   macro avg       0.79      0.85      0.81       760
+weighted avg       0.79      0.85      0.81       760
+
+fold 2:
+        training:
+                size: 3038
+                elapsed time: 00:00:01.80
+        test:
+                size: 760
+                elapsed time: 00:02:07.54
+
+
+              precision    recall  f1-score   support
+
+       ausiv       0.00      0.00      0.00        88
+      autoit       0.98      1.00      0.99       106
+       gepys       0.82      0.86      0.84        88
+ installcore       1.00      0.97      0.98        88
+      shipup       0.89      0.85      0.87       110
+       sivis       0.55      1.00      0.71       107
+      upatre       0.97      0.99      0.98       106
+     virlock       1.00      0.99      0.99        67
+
+    accuracy                           0.84       760
+   macro avg       0.78      0.83      0.80       760
+weighted avg       0.78      0.84      0.80       760
+
+fold 3:
+        training:
+                size: 3038
+                elapsed time: 00:00:01.78
+        test:
+                size: 760
+                elapsed time: 00:02:15.26
+
+
+              precision    recall  f1-score   support
+
+       ausiv       0.55      1.00      0.71        88
+      autoit       1.00      1.00      1.00       107
+       gepys       0.81      0.98      0.89        88
+ installcore       1.00      1.00      1.00        88
+      shipup       0.98      0.79      0.87       109
+       sivis       1.00      0.31      0.47       106
+      upatre       0.96      0.99      0.98       107
+     virlock       1.00      1.00      1.00        67
+
+    accuracy                           0.87       760
+   macro avg       0.91      0.88      0.86       760
+weighted avg       0.92      0.87      0.86       760
+
+fold 4:
+        training:
+                size: 3039
+                elapsed time: 00:00:01.78
+        test:
+                size: 759
+                elapsed time: 00:02:11.47
+
+
+              precision    recall  f1-score   support
+
+       ausiv       0.50      1.00      0.67        88
+      autoit       0.98      0.99      0.99       107
+       gepys       0.84      0.95      0.89        88
+ installcore       1.00      1.00      1.00        87
+      shipup       0.96      0.88      0.92       109
+       sivis       1.00      0.18      0.30       106
+      upatre       0.99      0.95      0.97       107
+     virlock       1.00      1.00      1.00        67
+
+    accuracy                           0.86       759
+   macro avg       0.91      0.87      0.84       759
+weighted avg       0.91      0.86      0.83       759
+
+fold 5:
+        training:
+                size: 3039
+                elapsed time: 00:00:01.77
+        test:
+                size: 759
+                elapsed time: 00:02:10.89
+
+
+              precision    recall  f1-score   support
+
+       ausiv       0.00      0.00      0.00        88
+      autoit       0.99      0.99      0.99       107
+       gepys       0.83      0.84      0.84        88
+ installcore       0.99      1.00      0.99        88
+      shipup       0.85      0.86      0.86       109
+       sivis       0.55      1.00      0.71       106
+      upatre       0.99      0.95      0.97       107
+     virlock       0.99      1.00      0.99        66
+
+    accuracy                           0.84       759
+   macro avg       0.77      0.83      0.79       759
+weighted avg       0.77      0.84      0.80       759
+
+
+0.00      0.00      0.00       0.00      0.00      0.00       0.55      1.00      0.71       0.50      1.00      0.67       0.00      0.00      0.00
+0.95      0.99      0.97       0.98      1.00      0.99       1.00      1.00      1.00       0.98      0.99      0.99       0.99      0.99      0.99
+0.85      0.99      0.92       0.82      0.86      0.84       0.81      0.98      0.89       0.84      0.95      0.89       0.83      0.84      0.84
+1.00      1.00      1.00       1.00      0.97      0.98       1.00      1.00      1.00       1.00      1.00      1.00       0.99      1.00      0.99
+0.98      0.85      0.91       0.89      0.85      0.87       0.98      0.79      0.87       0.96      0.88      0.92       0.85      0.86      0.86
+0.55      1.00      0.71       0.55      1.00      0.71       1.00      0.31      0.47       1.00      0.18      0.30       0.55      1.00      0.71
+0.97      0.94      0.96       0.97      0.99      0.98       0.96      0.99      0.98       0.99      0.95      0.97       0.99      0.95      0.97
+1.00      0.98      0.99       1.00      0.99      0.99       1.00      1.00      1.00       1.00      1.00      1.00       0.99      1.00      0.99
+
+
+
+
+>>> for i in range(5):
+...     col_names.extend([f"precision_{i}",f"recall_{i}",f"f1_{i}"])
+
+>>> with open("./utils/notes.txt") as infile:
+...     for i,line in enumerate(infile):
+...             if i>=404:
+...                     results.append([float(x)*100 for x in line.split("      ")])
+... 
+>>> import numpy as np
+>>> import pandas as pd
+>>> results_df=pd.DataFrame(results,columns=col_names)
+>>> results_df
+   precision_0  recall_{i}  f1_{i}  precision_1  recall_{i}  f1_{i}  precision_2  recall_{i}  f1_{i}  precision_3  recall_{i}  f1_{i}  precision_4  recall_{i}  f1_{i}
+0          0.0         0.0     0.0          0.0         0.0     0.0         55.0       100.0    71.0         50.0       100.0    67.0          0.0         0.0     0.0
+1         95.0        99.0    97.0         98.0       100.0    99.0        100.0       100.0   100.0         98.0        99.0    99.0         99.0        99.0    99.0
+2         85.0        99.0    92.0         82.0        86.0    84.0         81.0        98.0    89.0         84.0        95.0    89.0         83.0        84.0    84.0
+3        100.0       100.0   100.0        100.0        97.0    98.0        100.0       100.0   100.0        100.0       100.0   100.0         99.0       100.0    99.0
+4         98.0        85.0    91.0         89.0        85.0    87.0         98.0        79.0    87.0         96.0        88.0    92.0         85.0        86.0    86.0
+5         55.0       100.0    71.0         55.0       100.0    71.0        100.0        31.0    47.0        100.0        18.0    30.0         55.0       100.0    71.0
+6         97.0        94.0    96.0         97.0        99.0    98.0         96.0        99.0    98.0         99.0        95.0    97.0         99.0        95.0    97.0
+7        100.0        98.0    99.0        100.0        99.0    99.0        100.0       100.0   100.0        100.0       100.0   100.0         99.0       100.0    99.0
+>>> for i in range(5):
+...     col_names.extend([f"precision_{i}",f"recall_{i}",f"f1_{i}"])
+... 
+>>> col_names=[]
+>>> for i in range(5):
+...     col_names.extend([f"precision_{i}",f"recall_{i}",f"f1_{i}"])
+... 
+>>> results_df=pd.DataFrame(results,columns=col_names)
+>>> results_df
+   precision_0  recall_0   f1_0  precision_1  recall_1  f1_1  precision_2  recall_2   f1_2  precision_3  recall_3   f1_3  precision_4  recall_4  f1_4
+0          0.0       0.0    0.0          0.0       0.0   0.0         55.0     100.0   71.0         50.0     100.0   67.0          0.0       0.0   0.0
+1         95.0      99.0   97.0         98.0     100.0  99.0        100.0     100.0  100.0         98.0      99.0   99.0         99.0      99.0  99.0
+2         85.0      99.0   92.0         82.0      86.0  84.0         81.0      98.0   89.0         84.0      95.0   89.0         83.0      84.0  84.0
+3        100.0     100.0  100.0        100.0      97.0  98.0        100.0     100.0  100.0        100.0     100.0  100.0         99.0     100.0  99.0
+4         98.0      85.0   91.0         89.0      85.0  87.0         98.0      79.0   87.0         96.0      88.0   92.0         85.0      86.0  86.0
+5         55.0     100.0   71.0         55.0     100.0  71.0        100.0      31.0   47.0        100.0      18.0   30.0         55.0     100.0  71.0
+6         97.0      94.0   96.0         97.0      99.0  98.0         96.0      99.0   98.0         99.0      95.0   97.0         99.0      95.0  97.0
+7        100.0      98.0   99.0        100.0      99.0  99.0        100.0     100.0  100.0        100.0     100.0  100.0         99.0     100.0  99.0
+>>> f1_5fold=results_df[[f"f1_{i}" for i in range(5)]].mean(axis=1).values
+>>> precision_5fold=results_df[[f"precision_{i}" for i in range(5)]].mean(axis=1).values
+>>> recall_5fold=results_df[[f"recall_{i}" for i in range(5)]].mean(axis=1).values
+>>> precision_5fold
+array([21. , 98. , 83. , 99.8, 93.2, 73. , 97.6, 99.8])
+>>> recall
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'recall' is not defined
+>>> recall_5fold
+array([40. , 99.4, 92.4, 99.4, 84.6, 69.8, 96.4, 99.4])
+>>> f1_5fold
+array([27.6, 98.8, 87.6, 99.4, 88.6, 58. , 97.2, 99.4])
+>>> (55+50)/5
+21.0
+>>> results_df[[ precision_0,recall_0,precision_1,recall_1,precision_2,recall_2,precision_3,recall_3,precision_4,recall_4]].iloc[[0,5]].rename({0:"ausiv",5:"sivis"},axis="index")
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'precision_0' is not defined
+>>> results_df[["precision_0","recall_0","precision_1","recall_1","precision_2","recall_2","precision_3","recall_3","precision_4","recall_4"]].iloc[[0,5]].rename({0:"ausiv",5:"sivis"},axis="index")
+       precision_0  recall_0  precision_1  recall_1  precision_2  recall_2  precision_3  recall_3  precision_4  recall_4
+ausiv          0.0       0.0          0.0       0.0         55.0     100.0         50.0     100.0          0.0       0.0
+sivis         55.0     100.0         55.0     100.0        100.0      31.0        100.0      18.0         55.0     100.0
+>>> exit()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+################################################################
+NOVELTY DETECTION UMBALANCED
+family: upatre
+        training:
+                size: 3265
+                elapsed time: 00:08:42.23
+        test:
+                size: 533
+                elapsed time: 00:01:55.04
+         upatre samples detected as novelty: 100.0
+family: shipup
+        training:
+                size: 3251
+                elapsed time: 00:09:39.36
+        test:
+                size: 547
+                elapsed time: 00:01:53.99
+         shipup samples detected as novelty: 84.46069469835466
+family: autoit
+        training:
+                size: 3264
+                elapsed time: 00:10:37.53
+        test:
+                size: 534
+                elapsed time: 00:01:54.58
+         autoit samples detected as novelty: 97.56554307116104
+family: sivis
+        training:
+                size: 3266
+                elapsed time: 00:09:32.02
+        test:
+                size: 532
+                elapsed time: 00:01:51.81
+         sivis samples detected as novelty: 24.62406015037594
+family: gepys
+        training:
+                size: 3358
+                elapsed time: 00:10:11.29
+        test:
+                size: 440
+                elapsed time: 00:01:22.59
+         gepys samples detected as novelty: 35.22727272727273
+family: ausiv
+        training:
+                size: 3358
+                elapsed time: 00:10:32.57
+        test:
+                size: 440
+                elapsed time: 00:01:39.09
+         ausiv samples detected as novelty: 0.0
+family: installcore
+        training:
+                size: 3359
+                elapsed time: 00:09:15.08
+        test:
+                size: 439
+                elapsed time: 00:01:20.87
+         installcore samples detected as novelty: 99.31662870159454
+family: virlock
+        training:
+                size: 3465
+                elapsed time: 00:10:13.37
+        test:
+                size: 333
+                elapsed time: 00:01:13.23
+         virlock samples detected as novelty: 95.7957957957958
+67.12374939306933
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+######################################################################
+>>> for label in ["gepys","ausiv","installcore","virlock"]:
+...     for name in df.loc[df.name.isin([name.replace(".json","") for name in os.listdir("./data/graphs/fingerprint_gen_timing_test") if "json" in name])].loc[df.category==label].name.tolist():
+...             os.system(f"mv ./data/graphs/fingerprint_gen_timing_test/{name}.json ./data/graphs/fingerprint_gen_timing_test/{label}")
+
+FINGERPRINT GENERATION TIMING
+ausiv 00:00:06.78
+gepys 00:00:05.77
+installcore 00:00:43.12
+virlock 00:00:02.15
+sivis 00:00:07.51
+upatre 00:00:03.30
+autoit 00:08:17.29
+shipup 00:00:05.36
+
+{'upatre': 2.49873, 'installcore': 59.871430000000004, 'ausiv': 7.671, 'gepys': 5.78092, 'autoit': 501.24053999999995, 'virlock': 0.38550999999999996, 'shipup': 4.76624, 'sivis': 9.66364}
+
+
+
+
+
+
+########################################################################
+GRAPH GENERATION TIMING
+ausiv 00:18:07.22
+gepys 00:17:54.20
+installcore 00:19:41.51
+virlock 00:19:50.61
+sivis 00:16:47.85
+autoit 01:55:08.92
+shipup 00:17:37.26
+upatre 00:15:32.58
+
+malware size
+{'upatre': 66.4128, 'installcore': 1488.7949299999996, 'ausiv': 7333.716600000001, 'gepys': 208.12607999999997, 'autoit': 4140.633540000001, 'virlock': 1985.2390399999997, 'shipup': 375.79348000000005, 'sivis': 4049.2086399999994}
+
+shipup         547
+autoit         534
+upatre         533
+sivis          532
+gepys          440
+ausiv          440
+installcore    439
+virlock        333upatre 41:59:58.65
